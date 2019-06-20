@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action=""method="post">
+    <label>Amount:</label>
+    <input type="number"so="chuso" id="chuso" value=""/>
+    <br/>
+    <label>From Currency :</label>
+    <select>
+        <option label="VietNam">Danh sách 01</option>
+        <option label="USD">Danh sách 02</option>
+    </select>
+    <br/>
+    <label> To Currency :</label>
+    <select>
+        <option label="USD">Danh sách 01</option>
+        <option label="VietNam">Danh sách 02</option>
+    </select>
+
+<button type="button" onclick="show()">Convert</button>
+
+</form>
+<script>
+    function show() {
+        let number = document.getElementById("chuso").value;
+        let number2 = number/23000;
+        alert(number2);
+
+    }
+</script>
+</body>
+</html>
